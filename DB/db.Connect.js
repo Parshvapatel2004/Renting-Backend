@@ -8,7 +8,7 @@ async function connectToMongoDb() {
     // database connectivity code
     await client.connect();
     console.log("connected with mongodb atlas");
-    const database = client.db("RentingProperties");
+    const database = client.db("bookdb");
     return database;
   } catch (error) {
     console.log(error);
