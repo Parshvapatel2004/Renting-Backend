@@ -5,6 +5,7 @@ const { AddContactus } = require("./API/AddContactus");
 const { Register } = require("./API/Register");
 const { Login } = require("./API/Login");
 const { FetchAllUser } = require("./API/FetchAllData");
+const { UpdateProfile } = require("./API/UpdateProfile");
 
 dbConnect();
 
@@ -19,6 +20,7 @@ app.post("/AddContactus", AddContactus);
 app.post("/Register", Register);
 app.post("/Login", Login);
 app.get("/fetchalluser", FetchAllUser);
+app.post("/updateprofile", UpdateProfile);
 
 const PORT = 8000;
 app.listen(PORT);
