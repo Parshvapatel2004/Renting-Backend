@@ -6,6 +6,7 @@ const { Register } = require("./API/Register");
 const { Login } = require("./API/Login");
 const { FetchAllUser } = require("./API/FetchAllData");
 const { UpdateProfile } = require("./API/UpdateProfile");
+const { DeleteUser } = require("./API/DeleteUser");
 
 dbConnect();
 
@@ -21,6 +22,7 @@ app.post("/Register", Register);
 app.post("/Login", Login);
 app.get("/fetchalluser", FetchAllUser);
 app.post("/updateprofile", UpdateProfile);
+app.post("/deleteuser", DeleteUser);
 
-const PORT = 8000;
+const PORT = 5000;
 app.listen(PORT);
